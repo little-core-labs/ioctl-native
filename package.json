@@ -1,0 +1,40 @@
+{
+  "name": "ioctl-native",
+  "version": "0.0.1",
+  "description": "A simple N-API native node module for the ioctl function",
+  "main": "index.js",
+  "browser": "browser.js",
+  "scripts": {
+    "dev": "node-gyp build",
+    "test": "tape test.js",
+    "clean": "rm -rf build/ prebuild/",
+    "install": "node-gyp-build",
+    "prebuild": "prebuildify --napi --strip",
+    "prebuild-ia32": "prebuildify --arch=ia32 --napi --strip"
+  },
+  "keywords": [
+    "ioctl",
+    "native",
+    "napi",
+    "binding"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-gyp": "^5.0.0",
+    "prebuildify": "^3.0.0",
+    "tape": "^4.10.2"
+  },
+  "dependencies": {
+    "napi-macros": "^1.8.2",
+    "node-gyp-build": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwerle/ioctl-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jwerle/ioctl-native/issues"
+  },
+  "homepage": "https://github.com/jwerle/ioctl-native#readme"
+}
