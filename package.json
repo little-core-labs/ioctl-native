@@ -1,6 +1,6 @@
 {
   "name": "ioctl-native",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple N-API native node module for the ioctl function",
   "main": "index.js",
   "browser": "browser.js",
